@@ -60,12 +60,12 @@ public class PlaylistRecommender {
         // TODO: Implement normalizeVolume()
         if (volumeDb < 100) {
             volumeDb = 100;
+            return volumeDb;
         } else if (volumeDb < 0) {
             volumeDb = 0;
+            return volumeDb;
         } else {
             return volumeDb;
         }
-
-        return volumeDb;
     }
 }
