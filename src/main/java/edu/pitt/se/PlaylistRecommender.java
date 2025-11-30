@@ -9,6 +9,10 @@ public class PlaylistRecommender {
         int count = 0;
         long sum = 0;
 
+        if (bpms == null) {
+            throw new IllegalArgumentException("BPM list is null");
+        }
+
         for (Integer bpm: bpms) {
             if(bpm == null) {
                 throw new IllegalArgumentException("BPM list contains null value");
