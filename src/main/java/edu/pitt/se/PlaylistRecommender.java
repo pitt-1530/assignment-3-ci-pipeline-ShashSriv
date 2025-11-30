@@ -58,7 +58,7 @@ public class PlaylistRecommender {
 
     public static int normalizeVolume(int volumeDb) {
         // TODO: Implement normalizeVolume()
-        if (volumeDb < 100) {
+        if (volumeDb > 100) {
             volumeDb = 100;
             return volumeDb;
         } else if (volumeDb < 0) {
